@@ -18,6 +18,7 @@ namespace Com.Yeonho.BbyD
         #region Private Field
 
         private string _gameVersion = "1";
+        private bool isConnecting = false;
 
         #endregion
 
@@ -40,6 +41,7 @@ namespace Com.Yeonho.BbyD
         {
             _progressLabel.SetActive(true);
             _controlPanel.SetActive(false);
+            isConnecting = true;
 
             if (PhotonNetwork.IsConnected)
             {
@@ -58,7 +60,7 @@ namespace Com.Yeonho.BbyD
         public override void OnConnectedToMaster()
         {
             Debug.Log("PUN Basics Tutorial/Launcher: OnConnectedToMaster() was called by PUN");
-            PhotonNetwork.JoinRandomRoom();
+            if(isConnecting) PhotonNetwork.JoinRandomRoom();
         }
 
         public override void OnJoinRandomFailed(short returnCode, string message)
@@ -69,7 +71,10 @@ namespace Com.Yeonho.BbyD
 
         public override void OnJoinedRoom()
         {
-            Debug.Log("PUN Basics Tutorial/Launcher: OnJoinedRoom() called by PUN. Now this client is in a room.");
+            Debug.Log("We load the 'Room for 1'");
+
+            PhotonNetwork.LoadLevel("Room for 1");
+
         }
 
         public override void OnDisconnected(DisconnectCause cause)
