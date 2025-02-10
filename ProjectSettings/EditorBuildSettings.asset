@@ -6,23 +6,36 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/inGame.unity
+    path: Assets/Scenes/Lobby.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/Room for 1.unity
-    guid: 09e379a4b790bda4bb04d838ea7552ea
+    path: Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Scenes/PunBasics-Launcher.unity
+    guid: bff77b01b50254edbb6edeeaba5ae8b3
   - enabled: 1
-    path: Assets/Scenes/Room for 2.unity
-    guid: a1ba592727937134b90e35eebd2c9713
+    path: Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Scenes/PunBasics-Room
+      for 1.unity
+    guid: 9b8561c6e396849a5ba48c3eb9524049
   - enabled: 1
-    path: Assets/Scenes/Room for 3.unity
-    guid: 045d9868406d11a40862e9a2e1f1298f
+    path: Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Scenes/PunBasics-Room
+      for 2.unity
+    guid: 764428c63577f4580af4ce54ca9f4b1b
   - enabled: 1
-    path: Assets/Scenes/Room for 4.unity
-    guid: 3ba998622f2e2a64cb803a380774f05d
+    path: Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Scenes/PunBasics-Room
+      for 3.unity
+    guid: e07afcca5bf1a41f5bd28f498656b7b8
+  - enabled: 1
+    path: Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Scenes/PunBasics-Room
+      for 4.unity
+    guid: e7a7f9734636d415ca84ef3aaf7680f6
+  - enabled: 1
+    path: Assets/Photon/PhotonChat/Demos/DemoChat/DemoChat-Scene.unity
+    guid: ec07267f6a28fb044ac89845274e79af
   - enabled: 1
     path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scenes/DemoAsteroids-GameScene.unity
     guid: 98efc37d6307844488eb3e4247dde7e9
+  - enabled: 1
+    path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/PunCockpit-Scene.unity
+    guid: 9d6d60c803e244e51ba945a84b88757d
   - enabled: 1
     path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scenes/DemoAsteroids-LobbyScene.unity
     guid: c8a9d1312a49dc8488a9b32d83d659c7
